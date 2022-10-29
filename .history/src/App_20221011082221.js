@@ -18,10 +18,8 @@ function App() {
 				</div>
       </header>
 			<main>
-				<div>
-
+				<div
 				</div>
-
 			</main>
     </div>
   );

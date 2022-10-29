@@ -52,9 +52,11 @@ function DurTerm(props) {
 				  themePromptColor: "rgb(244,122,91)"
 				}
 			  }}
-			  enableInput={true}
+			  enableInput={{true}
 			  theme="myTheme"
-
+			defaultHandler={(command, commandArguments) => {
+				return `${command} passed on to default handler with arguments ${commandArguments}`;
+			}}
 		/>
 	);
 }

@@ -54,7 +54,8 @@ function DurTerm(props) {
 			  }}
 			  enableInput={true}
 			  theme="myTheme"
-
+			enableMobileInput={true}
+			caret={}
 		/>
 	);
 }

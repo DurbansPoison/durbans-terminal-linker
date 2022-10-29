@@ -13,7 +13,9 @@ function App() {
 				</div>
 				<div className="termContainer">
 				<TerminalContextProvider>
+					<input>
 				<DurTerm />
+					</input>
 				</TerminalContextProvider>
 				</div>
       </header>

@@ -16,7 +16,7 @@ function DurTerm(props) {
 		help: (
 			<span>
 
-				<strong>odysee</strong> - opens Durbans Odysee portfolio.<br></br>
+	<strong>odysee</strong> - opens Durbans Odysee portfolio.<br></br>
 				<strong>defcad</strong> - opens Durbans Defcad portfolio. <br></br>
 				<strong>instagram</strong> - opens Durbans Instagram profile. <br></br>
 				<strong>github</strong> - opens Durbans Github profile. <br></br>
@@ -52,9 +52,10 @@ function DurTerm(props) {
 				  themePromptColor: "rgb(244,122,91)"
 				}
 			  }}
-			  enableInput={true}
 			  theme="myTheme"
-
+			defaultHandler={(command, commandArguments) => {
+				return `${command} passed on to default handler with arguments ${commandArguments}`;
+			}}
 		/>
 	);
 }

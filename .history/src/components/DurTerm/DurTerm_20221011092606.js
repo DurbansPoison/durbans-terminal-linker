@@ -54,7 +54,9 @@ function DurTerm(props) {
 			  }}
 			  enableInput={true}
 			  theme="myTheme"
-
+			defaultHandler={(command, commandArguments) => {
+				return `${command} passed on to default handler with arguments ${commandArguments}`;
+			}}
 		/>
 	);
 }
